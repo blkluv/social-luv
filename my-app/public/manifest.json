@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FEED LUV",
+  "name": "A postive vibes only Twitter-like Solana Dapp",
   "icons": [
     {
       "src": "favicon.ico",
