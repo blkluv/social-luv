@@ -1,4 +1,4 @@
-# Solana React Twitter
+# Solana Twitter-like
 
 Simplified version of twitter as a solana dApp.
 
