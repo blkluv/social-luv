@@ -7,15 +7,15 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WorkspaceContext } from "../hooks/WorkspaceProvider";
 
 const TweetForm = (props) => {
-  const { forcedTopic, added } = props;
+  const { forcedVibe, added } = props;
   const workspace = useContext(WorkspaceContext);
 
   // Form data.
   const [content, setContent] = useState("");
-  const [topic, setTopic] = useState("");
-  const slugTopic = useSlug(topic);
+  const [vibe, setVibe] = useState("");
+  const slugVibe = useSlug(vibe);
 
-  const effectiveTopic = forcedTopic ?? slugTopic;
+  const effectiveVibe = forcedVibe ?? slugVibe;
 
   // Auto-resize the content's textarea.
   const textarea = useRef(null);
@@ -36,10 +36,10 @@ const TweetForm = (props) => {
   // Actions.
   const send = async () => {
     if (!canTweet) return;
-    const tweet = await sendTweet(workspace, effectiveTopic, content);
+    const tweet = await sendTweet(workspace, effectiveVibe, content);
     added(tweet);
     setContent("");
-    setTopic("");
+    setVibe("");
   };
   if (!connected) {
     return (
@@ -56,7 +56,7 @@ const TweetForm = (props) => {
         ref={textarea}
         rows="1"
         className="text-xl w-full focus:outline-none resize-none mb-3"
-        placeholder="Tap into LUV MetaVerse!"
+        placeholder="Tap Into LUV MetaVerse!"
         value={content}
         onChange={(e) => setContent(e.target.value)}
       ></textarea>

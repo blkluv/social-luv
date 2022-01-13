@@ -2,11 +2,11 @@ import { useState } from "react";
 
 export const TweetSearch = (props) => {
   const { modelValue, placeholder, search, icon } = props;
-  const [searchTopic, setSearchTopic] = useState(modelValue);
+  const [searchVibe, setSearchVibe] = useState(modelValue);
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
-      search(searchTopic);
+      search(searchVibe);
     }
   };
 
@@ -17,8 +17,8 @@ export const TweetSearch = (props) => {
           type="text"
           className="text-gray-700 w-full pl-16 pr-32 py-4 bg-gray-50"
           placeholder={placeholder}
-          value={searchTopic}
-          onChange={(e) => setSearchTopic(e.target.value)}
+          value={searchVibe}
+          onChange={(e) => setSearchVibe(e.target.value)}
           onKeyPress={handleKeyPress}
         />
 
@@ -33,12 +33,12 @@ export const TweetSearch = (props) => {
         <div className="absolute right-0 inset-y-0 flex items-center pr-8">
           <button
             className={`${
-              !!searchTopic
+              !!searchVibe
                 ? "text-gray-700 bg-gray-300 hover:bg-gray-400 hover:text-white"
                 : "text-gray-400 bg-gray-200 cursor-not-allowed"
             } rounded-full px-4 py-1  font-semibold`}
-            disabled={!searchTopic}
-            onClick={() => search(searchTopic)}
+            disabled={!searchVibe}
+            onClick={() => search(searchVibe)}
           >
             Search
           </button>
