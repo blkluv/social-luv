@@ -4,7 +4,7 @@ import { PageNotFound } from "../pages/PageNotFound";
 import { Profile } from "../pages/Profile";
 import { Topics } from "../pages/Topics";
 import { TweetPage } from "../pages/TweetPage";
-import { Users } from "../pages/Users";
+import { Luvrs } from "../pages/Luvrs";
 
 export function MainLayout() {
   let location = useLocation();
@@ -21,8 +21,8 @@ export function MainLayout() {
         </Route>
         <Route path="profile" element={<Profile />}></Route>
 
-        <Route path="users" element={<Users />}>
-          <Route path=":authorSlug" element={<Users />}></Route>
+        <Route path="luvrs" element={<Luvrs />}>
+          <Route path=":authorSlug" element={<Luvrs />}></Route>
         </Route>
 
         <Route path="tweet" element={<TweetPage />}>

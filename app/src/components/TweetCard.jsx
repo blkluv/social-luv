@@ -10,7 +10,7 @@ const TweetCard = (props) => {
       return { name: "/profile", params: { author: "" } };
     } else {
       return {
-        name: "/users",
+        name: "/luvrs",
         params: { author: tweet.author.toBase58() },
       };
     }

@@ -112,7 +112,7 @@ const Sidebar = () => {
         />
 
         <SideButton
-          to="/users"
+          to="/luvrs"
           activeIcon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="Users"
+          text="Luvrs"
         />
 
         {/* Check if connected wallet. */}

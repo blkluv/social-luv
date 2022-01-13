@@ -5,7 +5,7 @@ import TweetList from "../components/TweetList";
 import { TweetSearch } from "../components/TweetSearch";
 import { WorkspaceContext } from "../hooks/WorkspaceProvider";
 
-export function Users() {
+export function Luvrs() {
   const navigate = useNavigate();
   const workspace = useContext(WorkspaceContext);
   let { authorSlug } = useParams();
@@ -18,7 +18,7 @@ export function Users() {
   // Actions.
   const search = (newAuthor) => {
     setAuthor(newAuthor);
-    navigate(`/users/${newAuthor}`);
+    navigate(`/luvrs/${newAuthor}`);
   };
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export function Users() {
           <TweetList tweets={tweets} loading={loading}></TweetList>
           {tweets.length === 0 && (
             <div className="p-8 text-gray-500 text-center">
-              User not found...
+              LUVR not found...
             </div>
           )}
         </div>
