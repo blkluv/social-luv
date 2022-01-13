@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { PageNotFound } from "../pages/PageNotFound";
 import { Profile } from "../pages/Profile";
-import { Topics } from "../pages/Topics";
+import { Vibes } from "../pages/Vibes";
 import { TweetPage } from "../pages/TweetPage";
 import { Luvrs } from "../pages/Luvrs";
 
@@ -16,12 +16,12 @@ export function MainLayout() {
       </header>
       <Routes>
         <Route path="" element={<Home />}></Route>
-        <Route path="topics" element={<Topics />}>
-          <Route path=":topicSlug" element={<Topics />}></Route>
+        <Route path="vibes" element={<Vibes />}>
+          <Route path=":vibeSlug" element={<Vibes />}></Route>
         </Route>
         <Route path="profile" element={<Profile />}></Route>
 
-        <Route path="luvrs" element={<Luvrs />}>
+        <Route path="luvrs" element={<Luvrs/>}>
           <Route path=":authorSlug" element={<Luvrs />}></Route>
         </Route>
 

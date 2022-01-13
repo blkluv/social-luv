@@ -76,11 +76,11 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="Home"
+          text="HOME"
         />
 
         <SideButton
-          to="/topics"
+          to="/vibes"
           activeIcon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="Topics"
+          text="VIBES"
         />
 
         <SideButton
@@ -139,7 +139,7 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="Luvrs"
+          text="LUVRS"
         />
 
         {/* Check if connected wallet. */}
@@ -176,7 +176,7 @@ const Sidebar = () => {
                 />
               </svg>
             }
-            text="Profile"
+            text="PROFILE"
           />
         )}
       </div>

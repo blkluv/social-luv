@@ -44,7 +44,7 @@ const TweetForm = (props) => {
   if (!connected) {
     return (
       <div className="px-8 py-4 bg-gray-50 text-gray-500 text-center border-b">
-        Connect your wallet to start tweeting...
+        Connect your Solana wallet to start tweeting...
       </div>
     );
   }
@@ -56,21 +56,21 @@ const TweetForm = (props) => {
         ref={textarea}
         rows="1"
         className="text-xl w-full focus:outline-none resize-none mb-3"
-        placeholder="What's happening?"
+        placeholder="Tap into LUV MetaVerse!"
         value={content}
         onChange={(e) => setContent(e.target.value)}
       ></textarea>
 
       <div className="flex flex-wrap items-center justify-between -m-2">
-        {/* Topic field */}
+        {/* Vibe field */}
         <div className="relative m-2 mr-4">
           <input
             type="text"
-            placeholder="topic"
+            placeholder="vibe"
             className="text-primary-light rounded-full pl-10 pr-4 py-2 bg-gray-100"
-            value={effectiveTopic}
-            onChange={(e) => setTopic(e.target.value)}
-            disabled={!!forcedTopic}
+            value={effectiveVibe}
+            onChange={(e) => setVibe(e.target.value)}
+            disabled={!!forcedVibe}
           />
           <div className="absolute left-0 inset-y-0 flex pl-3 pr-2">
             <svg

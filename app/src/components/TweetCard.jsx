@@ -43,7 +43,7 @@ const TweetCard = (props) => {
       {/* Link to the topic page.  */}
       {tweet.topic && (
         <Link
-          to={`/topics/${tweet.topic}`}
+          to={`/vibes/${tweet.topic}`}
           className="inline-block mt-2 text-primary-light hover:underline"
         >
           #{tweet.topic}
