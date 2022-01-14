@@ -42,10 +42,10 @@ className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 <SideButton
 to="/"
 activeIcon={
-<img src={require('./app/public/home_icon.png')} />
+<img src={require('./app/public/home_icon.png.')} />
 }
 inactiveIcon={
-<img src={require('./app/public/home_icon.png')} />
+<img src={require('./app/public/home_icon.png.')} />
 }
 text="HOME"
 />
@@ -53,10 +53,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={require('./app/public/LUV-NFT-icon.png')} />
+<img src={require('./app/public/LUV-NFT-icon.png.')} />
 }
 inactiveIcon={
-<img src={require('./app/public/LUV-NFT-icon.png')} />
+<img src={require('./app/public/LUV-NFT-icon.png.')} />
 }
 text="LUV NFTS"
 />
@@ -64,10 +64,10 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={require('./app/public/5D-LUVRS-icon.png')} />
+<img src={require('./app/public/5D-LUVRS-icon.png.')} />
 }
 inactiveIcon={
-<img src={require('./app/public/5D-LUVRS-icon.png')} />
+<img src={require('./app/public/5D-LUVRS-icon.png.')} />
 }
 text="5D LUVRS"
 />
@@ -77,10 +77,10 @@ text="5D LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={require('./app/public/PROFILE-icon.png')} />
+<img src={require('./app/public/PROFILE-icon.png.')} />
 }
 inactiveIcon={
-<img src={require('./app/public/PROFILE-icon.png')} />
+<img src={require('./app/public/PROFILE-icon.png.')} />
 }
 text="PROFILE"
 />
