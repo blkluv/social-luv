@@ -76,11 +76,11 @@ describe("solana-twitter", () => {
     assert.ok(tweetAccount.timestamp);
   });
 
-  it("cannot provide a vibe with more than 50 characters", async () => {
+  it("cannot provide a topic with more than 50 characters", async () => {
     try {
       const tweet = anchor.web3.Keypair.generate();
-      const vibeWith51Chars = "x".repeat(51);
-      await program.rpc.sendTweet(vibeWith51Chars, "Hummus, am I right?", {
+      const topicWith51Chars = "x".repeat(51);
+      await program.rpc.sendTweet(topicWith51Chars, "Hummus, am I right?", {
         accounts: {
           tweet: tweet.publicKey,
           author: program.provider.wallet.publicKey,
@@ -128,7 +128,7 @@ describe("solana-twitter", () => {
     );
   });
 
-  it("can filter tweets by vibes", async () => {
+  it("can filter tweets by topics", async () => {
     const tweetAccounts = await program.account.tweet.all([
       {
         memcmp: {
