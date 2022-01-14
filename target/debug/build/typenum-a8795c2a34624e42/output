@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/hardworker1002/social-luv/target/debug/build/typenum-a8795c2a34624e42/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/hardworker1002/social-luv/target/debug/build/typenum-a8795c2a34624e42/out/op.rs
