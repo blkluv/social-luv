@@ -32,7 +32,7 @@ export function TweetPage() {
     return <div className="p-8 text-gray-500 text-center">Loading...</div>;
   }
   if (!tweet) {
-    return <div className="p-8 text-gray-500 text-center">Tweet not found</div>;
+    return <div className="p-8 text-gray-500 text-center">LUV NFT not found</div>;
   }
   return <TweetCard tweet={tweet}></TweetCard>;
 }

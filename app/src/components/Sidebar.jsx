@@ -80,7 +80,7 @@ const Sidebar = () => {
         />
 
         <SideButton
-          to="/vibes"
+          to="/topics"
           activeIcon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,11 +108,11 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="VIBES"
+          text="LUV NFTS"
         />
 
         <SideButton
-          to="/luvrs"
+          to="/users"
           activeIcon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ const Sidebar = () => {
               />
             </svg>
           }
-          text="LUVRS"
+          text="5D LUVRS"
         />
 
         {/* Check if connected wallet. */}

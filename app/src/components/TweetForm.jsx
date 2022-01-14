@@ -7,15 +7,15 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WorkspaceContext } from "../hooks/WorkspaceProvider";
 
 const TweetForm = (props) => {
-  const { forcedVibe, added } = props;
+  const { forcedTopic, added } = props;
   const workspace = useContext(WorkspaceContext);
 
   // Form data.
   const [content, setContent] = useState("");
-  const [vibe, setVibe] = useState("");
-  const slugVibe = useSlug(vibe);
+  const [topic, setTopic] = useState("");
+  const slugTopic = useSlug(topic);
 
-  const effectiveVibe = forcedVibe ?? slugVibe;
+  const effectiveTopic = forcedTopic ?? slugTopic;
 
   // Auto-resize the content's textarea.
   const textarea = useRef(null);
@@ -36,15 +36,15 @@ const TweetForm = (props) => {
   // Actions.
   const send = async () => {
     if (!canTweet) return;
-    const tweet = await sendTweet(workspace, effectiveVibe, content);
+    const tweet = await sendTweet(workspace, effectiveTopic, content);
     added(tweet);
     setContent("");
-    setVibe("");
+    setTopic("");
   };
   if (!connected) {
     return (
       <div className="px-8 py-4 bg-gray-50 text-gray-500 text-center border-b">
-        Connect your Solana wallet to start tweeting...
+        Connect your wallet to start tweeting...
       </div>
     );
   }
@@ -56,21 +56,21 @@ const TweetForm = (props) => {
         ref={textarea}
         rows="1"
         className="text-xl w-full focus:outline-none resize-none mb-3"
-        placeholder="Tap Into LUV MetaVerse!"
+        placeholder="What's happening?"
         value={content}
         onChange={(e) => setContent(e.target.value)}
       ></textarea>
 
       <div className="flex flex-wrap items-center justify-between -m-2">
-        {/* Vibe field */}
+        {/* Topic field */}
         <div className="relative m-2 mr-4">
           <input
             type="text"
-            placeholder="vibe"
+            placeholder="topic"
             className="text-primary-light rounded-full pl-10 pr-4 py-2 bg-gray-100"
-            value={effectiveVibe}
-            onChange={(e) => setVibe(e.target.value)}
-            disabled={!!forcedVibe}
+            value={effectiveTopic}
+            onChange={(e) => setTopic(e.target.value)}
+            disabled={!!forcedTopic}
           />
           <div className="absolute left-0 inset-y-0 flex pl-3 pr-2">
             <svg

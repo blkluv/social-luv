@@ -10,7 +10,7 @@ const TweetCard = (props) => {
       return { name: "/profile", params: { author: "" } };
     } else {
       return {
-        name: "/luvrs",
+        name: "/users",
         params: { author: tweet.author.toBase58() },
       };
     }
@@ -43,7 +43,7 @@ const TweetCard = (props) => {
       {/* Link to the topic page.  */}
       {tweet.topic && (
         <Link
-          to={`/vibes/${tweet.topic}`}
+          to={`/topics/${tweet.topic}`}
           className="inline-block mt-2 text-primary-light hover:underline"
         >
           #{tweet.topic}

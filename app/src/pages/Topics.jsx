@@ -7,55 +7,55 @@ import { TweetSearch } from "../components/TweetSearch";
 import { useSlug } from "../hooks/useSlug";
 import { WorkspaceContext } from "../hooks/WorkspaceProvider";
 
-export const Vibes = () => {
+export const Topics = () => {
   const navigate = useNavigate();
   const workspace = useContext(WorkspaceContext);
-  let { vibeSlug } = useParams();
+  let { topicSlug } = useParams();
 
-  const [vibe, setVibe] = useState(vibeSlug);
+  const [topic, setTopic] = useState(topicSlug);
   const [tweets, setTweets] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [viewedVibe, setViewedTopic] = useState("");
+  const [viewedTopic, setViewedTopic] = useState("");
 
-  const slugTopic = useSlug(vibe);
+  const slugTopic = useSlug(topic);
 
   // Actions.
   const addTweet = (tweet) => setTweets([...tweets, tweet]);
 
-  const search = (newVibe) => {
-    setTopic(newVibe);
+  const search = (newTopic) => {
+    setTopic(newTopic);
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    navigate(`/vibe/${newVibe}`);
+    navigate(`/topics/${newTopic}`);
   };
 
   useEffect(() => {
-    const fetchVibeTweets = async () => {
-      if (slugVibe === viewedVibe) return;
+    const fetchTopicTweets = async () => {
+      if (slugTopic === viewedTopic) return;
       try {
         setLoading(true);
         const fetchedTweets = await fetchTweets(workspace, [
-          topicFilter(slugVibe),
+          topicFilter(slugTopic),
         ]);
         setTweets(fetchedTweets);
-        setViewedVibe(slugVibe);
+        setViewedTopic(slugTopic);
       } finally {
         setLoading(false);
       }
     };
 
-    if (vibe) {
-      fetchVibeTweets();
+    if (topic) {
+      fetchTopicTweets();
     } else {
       setTweets([]);
-      setViewedVibe("");
+      setViewedTopic("");
     }
-  }, [slugVibe, vibe, viewedVibe, workspace]);
+  }, [slugTopic, topic, viewedTopic, workspace]);
 
   return (
     <div>
       <TweetSearch
-        placeholder="Search for a vibe..."
-        modelValue={slugVibe}
+        placeholder="Search for a topic..."
+        modelValue={slugTopic}
         search={search}
         icon={
           <svg
@@ -73,13 +73,13 @@ export const Vibes = () => {
         }
       ></TweetSearch>
 
-      {viewedVibe && (
+      {viewedTopic && (
         <div>
-          <TweetForm added={addTweet} forcedVibe={viewedVibe}></TweetForm>
+          <TweetForm added={addTweet} forcedTopic={viewedTopic}></TweetForm>
           <TweetList tweets={tweets} loading={loading}></TweetList>
           {tweets.length === 0 && (
             <div className="p-8 text-gray-500 text-center">
-              No tweets were found about this vibe...
+              No LUV NFTs were found with this vibe...
             </div>
           )}
         </div>

@@ -2,9 +2,9 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { PageNotFound } from "../pages/PageNotFound";
 import { Profile } from "../pages/Profile";
-import { Vibes } from "../pages/Vibes";
+import { Topics } from "../pages/Topics";
 import { TweetPage } from "../pages/TweetPage";
-import { Luvrs } from "../pages/Luvrs";
+import { Users } from "../pages/Users";
 
 export function MainLayout() {
   let location = useLocation();
@@ -16,13 +16,13 @@ export function MainLayout() {
       </header>
       <Routes>
         <Route path="" element={<Home />}></Route>
-        <Route path="vibes" element={<Vibes />}>
-          <Route path=":vibeSlug" element={<Vibes />}></Route>
+        <Route path="topics" element={<Topics />}>
+          <Route path=":topicSlug" element={<Topics />}></Route>
         </Route>
         <Route path="profile" element={<Profile />}></Route>
 
-        <Route path="luvrs" element={<Luvrs/>}>
-          <Route path=":authorSlug" element={<Luvrs />}></Route>
+        <Route path="users" element={<Users />}>
+          <Route path=":authorSlug" element={<Users />}></Route>
         </Route>
 
         <Route path="tweet" element={<TweetPage />}>
