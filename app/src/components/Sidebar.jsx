@@ -36,7 +36,7 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={require('./app/public/home_icon.png'.)} />
+<img src={require('./app/public/home_icon.png')} />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
