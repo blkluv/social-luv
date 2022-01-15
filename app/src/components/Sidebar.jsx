@@ -36,16 +36,16 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={require('./app/public/home-icon.png')} />
+<img src={require('./logo192.png')} style={{'width':'100px'},{'height':'100px'}} />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
 to="/"
 activeIcon={
-<img src={require('./app/public/home-icon.png')} />
+<img src={require('./home.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./app/public/home-icon.png')} />
+<img src={require('./home.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="HOME"
 />
@@ -53,10 +53,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={require('./app/public/luv-nft-icon.png')} />
+<img src={require('./luv.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./app/public/luv-nft-icon.png')} />
+<img src={require('./luv.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="LUV NFTS"
 />
@@ -64,12 +64,12 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={require('./app/public/5d-luvrs-icon.png')}/>
+<img src={require('./luvrs.png')} style={{'width':'100px'},{'height':'100px'}}/>
 }
 inactiveIcon={
-<img src={require('./app/public/5d-luvrs-icon.png')} />
+<img src={require('./luvrs.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
-text="5D LUVRS"
+text="LUVRS"
 />
 
 {/* Check if connected wallet. */}
@@ -77,10 +77,10 @@ text="5D LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={require('./app/public/profile-icon.png')} />
+<img src={require('./profile.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./app/public/profile-icon.png')} />
+<img src={require('./profile.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="PROFILE"
 />
