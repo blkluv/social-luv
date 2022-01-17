@@ -36,16 +36,16 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={require('./logo192.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/home.png')} style={{'width':'100px'},{'height':'100px'}} />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
 to="/"
 activeIcon={
-<img src={require('./home.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/home.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./home.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/home.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="HOME"
 />
@@ -53,10 +53,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={require('./luv.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/luv.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./luv.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/luv.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="LUV NFTS"
 />
@@ -64,10 +64,10 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={require('./luvrs.png')} style={{'width':'100px'},{'height':'100px'}}/>
+<img src={require('../../public/luvrs.png')} style={{'width':'100px'},{'height':'100px'}}/>
 }
 inactiveIcon={
-<img src={require('./luvrs.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/luvrs.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="LUVRS"
 />
@@ -77,10 +77,10 @@ text="LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={require('./profile.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/profile.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('./profile.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={require('../../public/profile.png')} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="PROFILE"
 />
