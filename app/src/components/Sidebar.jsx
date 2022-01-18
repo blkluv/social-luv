@@ -46,10 +46,10 @@ className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 <SideButton
 to="/"
 activeIcon={
-<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
 }
 inactiveIcon={
-<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
 }
 text="HOME"
 />
@@ -57,10 +57,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={iconLuv} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} />
 }
 inactiveIcon={
-<img src={iconLuv} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} />
 }
 text="LUV NFTS"
 />
@@ -68,10 +68,10 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={iconLuvrs} style={{'width':'100px'},{'height':'100px'}}/>
+<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}}/>
 }
 inactiveIcon={
-<img src={iconLuvrs} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}} />
 }
 text="LUVRS"
 />
@@ -81,10 +81,10 @@ text="LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={iconProfile} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} />
 }
 inactiveIcon={
-<img src={iconProfile} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} />
 }
 text="PROFILE"
 />
