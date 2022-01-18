@@ -40,7 +40,7 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
