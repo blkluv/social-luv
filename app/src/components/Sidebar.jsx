@@ -5,6 +5,10 @@ WalletModalProvider,
 WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
 import { useWallet } from "@solana/wallet-adapter-react";
+import iconHome from '../icons/home.png';
+import iconLuv from '../icons/luv.png';
+import iconLuvrs from '../icons/luvrs.png';
+import iconProfile from '../icons/profile.png';
 
 const SideButton = ({ activeIcon, inactiveIcon, text, to }) => {
 return (
@@ -36,16 +40,16 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={require('../icons/home.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
 to="/"
 activeIcon={
-<img src={require('../icons/home.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('../icons/home.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconHome} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="HOME"
 />
@@ -53,10 +57,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={require('../icons/luv.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuv} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('../icons/luv.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuv} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="LUV NFTS"
 />
@@ -64,10 +68,10 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={require('../icons/luvrs.png')} style={{'width':'100px'},{'height':'100px'}}/>
+<img src={iconLuvrs} style={{'width':'100px'},{'height':'100px'}}/>
 }
 inactiveIcon={
-<img src={require('../icons/luvrs.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconLuvrs} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="LUVRS"
 />
@@ -77,10 +81,10 @@ text="LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={require('../icons/profile.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconProfile} style={{'width':'100px'},{'height':'100px'}} />
 }
 inactiveIcon={
-<img src={require('../icons/profile.png')} style={{'width':'100px'},{'height':'100px'}} />
+<img src={iconProfile} style={{'width':'100px'},{'height':'100px'}} />
 }
 text="PROFILE"
 />
