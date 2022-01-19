@@ -6,7 +6,10 @@
     },
     "dependencies": {
         "@arcblock/forge-sdk": "^1.6.0",
+        "@audius/fetch-nft": "^0.1.6",
         "@project-serum/anchor": "^0.19.1-beta.1",
+        "@solana/spl-token": "^0.1.8",
+        "@solana/web3.js": "^1.31.0",
         "findup-sync": "^5.0.0",
         "flatted": "^3.2.4",
         "ms": "2.1.3",

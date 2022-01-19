@@ -7,6 +7,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import { FetchNFTClient } from '@audius/fetch-nft'
+
+// Initialize fetch client
+const fetchClient = new FetchNFTClient()
+
+// Fetching all collectibles for the given wallets
+fetchClient.getCollectibles({
+  solWallets: ['GrWNH9qfwrvoCEoTm65hmnSh4z3CD96SfhtfQY6ZKUfY']
+}).then(res => console.log(res))
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
