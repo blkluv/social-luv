@@ -8,6 +8,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import iconHome from '../icons/home.png';
 import iconLuv from '../icons/luv.png';
 import iconLuvrs from '../icons/luvrs.png';
+import iconLogo192 from '../icons/logo192.png';
 import iconProfile from '../icons/profile.png';
 
 const SideButton = ({ activeIcon, inactiveIcon, text, to }) => {
@@ -40,16 +41,16 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconLogo192.png} style={{'width':'50px'},{'height':'50px'}} alt= 'logo' />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
 to="/"
 activeIcon={
-<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} alt= 'home'/>
 }
 inactiveIcon={
-<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} alt= 'home'/>
 }
 text="HOME"
 />
@@ -57,10 +58,10 @@ text="HOME"
 <SideButton
 to="/topics"
 activeIcon={
-<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} alt= 'luv'/>
 }
 inactiveIcon={
-<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconLuv} style={{'width':'50px'},{'height':'50px'}} alt= 'luv' />
 }
 text="LUV NFTS"
 />
@@ -68,10 +69,10 @@ text="LUV NFTS"
 <SideButton
 to="/users"
 activeIcon={
-<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}}/>
+<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}} alt= 'luvrs'/>
 }
 inactiveIcon={
-<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconLuvrs} style={{'width':'50px'},{'height':'50px'}} alt= 'luvrs'/>
 }
 text="LUVRS"
 />
@@ -81,10 +82,10 @@ text="LUVRS"
 <SideButton
 to="/profile"
 activeIcon={
-<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} alt= 'profile'/>
 }
 inactiveIcon={
-<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} />
+<img src={iconProfile} style={{'width':'50px'},{'height':'50px'}} alt= 'profile'/>
 }
 text="PROFILE"
 />
