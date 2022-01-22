@@ -41,16 +41,16 @@ return (
 to="/"
 className="inline-block rounded-full hover:bg-gray-100 p-3 md:self-start"
 >
-<img src={iconLogo192.png} style={{'width':'50px'},{'height':'50px'}} alt= 'logo' />
+<img src={iconLogo192.png} style={{width:'50px', height:'50px'}} alt= 'logo' />
 </NavLink>
 <div className="flex flex-col items-center md:items-stretch space-y-2">
 <SideButton
 to="/"
 activeIcon={
-<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} alt= 'home'/>
+<img src={iconHome} style={{width:'50px', height:'50px'}} alt= 'home' />    
 }
 inactiveIcon={
-<img src={iconHome} style={{'width':'50px'},{'height':'50px'}} alt= 'home'/>
+<img src={iconHome} style={{width:'50px', height:'50px'}} alt= 'home' />     
 }
 text="HOME"
 />
