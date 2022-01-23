@@ -11,7 +11,7 @@ solana_twitter = "9jFkPjdZQVAGT4Q8XDbmt6zB54djLtXhr33tgBS31H1w"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "mainnet"
+cluster = "mainnet-beta"
 wallet = "/Users/pwarrior/.config/solana/id.json"
 
 [scripts]
