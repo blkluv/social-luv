@@ -4,8 +4,11 @@ import { SolanaTwitter } from "../target/types/solana_twitter";
 import * as assert from "assert";
 import * as bs58 from "bs58";
 
+
+
 describe("solana-twitter", () => {
   // Configure the client to use the local cluster.
+
   anchor.setProvider(anchor.Provider.env());
 
   const program = anchor.workspace.SolanaTwitter as Program<SolanaTwitter>;
